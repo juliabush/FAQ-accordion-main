@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* Fonts */
+    --ff-main: 'Work Sans';
+    --ff-size: 1rem;
+    --fw-light: 400;
+    --fw-mid: 600;
+    --fw-bold: 700;
+
+    /* Colors */
+    --clr-White: hsl(0, 0%, 100%);
+    --clr-Lightpink: hsl(275, 100%, 97%);
+    --clr-Grayishpurple: hsl(292, 16%, 49%);
+    --clr-Darkpurple: hsl(292, 42%, 14%);
+}
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  
+  html {
+    height: 100%;
+    background-color: var(--clr-Lightpink);
+  }
+  body {
+    height: 100%;
+    display: grid;
+  }
+  main {
+    font-size: var(--ff-size);
+    font-family: var(--ff-main);
+    color: var(--clr-Darkpurple);
+  }
+  .component__main-card {
+    place-self: center;
+    padding: 1.5rem;
+    margin: 2rem;
+    border-radius: .7rem;
+    background-color: var(--clr-White);
+    position: relative;
+    bottom: 100px;
+    max-width: 440px;
+  }
+  picture {
+    background-image: url(/assets/images/background-pattern-mobile.svg);
+    background-repeat: repeat;
+}
+  .main-title__flexgroup {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: .5rem;
+  }
+  .card__main-title {
+    font-size: 1.7rem;
+  }
+  .main-title__icon {
+    width: 30px;
+  }
+  h2, h3, h4, h5 {
+    font-size: 1rem;
+    opacity: 0.9;
+    font-weight: var(--fw-mid);
+    grid-row: 1;
+  }
+  .flexgroup {
+    display: grid;
+    margin-bottom: .5rem;
+  }
+  .icon {
+    justify-self: end;
+    align-self: center;
+    grid-row: 1;
+  }
+  .answer {
+    display: none;
+  }
+  @media (min-width: 1080px) {
+    .component__main-card {
+        bottom: 140px;
+        max-width: 540px
+    }
+    .main-title__flexgroup {
+        margin-bottom: 1.5rem;
+    }
+  }
