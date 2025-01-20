@@ -130,7 +130,7 @@
   }
   @media (min-width: 1080px) {
     .component__main-card {
-        bottom: 140px;
+        bottom: 180px;
         max-width: 600px
     }
     .main-title__flexgroup {
