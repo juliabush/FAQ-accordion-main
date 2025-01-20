@@ -67,6 +67,7 @@
     font-size: var(--ff-size);
     font-family: var(--ff-main);
     color: var(--clr-Darkpurple);
+     display: grid;
   }
   .component__main-card {
     place-self: center;
